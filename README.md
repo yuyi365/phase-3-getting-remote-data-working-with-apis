@@ -1,9 +1,9 @@
 # Working with APIs
 
-## Objectives
+## Learning Goals
 
-1. Understand why programmers need to work with APIs
-2. Learn some of the basic ways in which programmers work with APIs
+- Understand why programmers need to work with APIs
+- Learn some of the basic ways in which programmers work with APIs
 
 ## Define API
 
