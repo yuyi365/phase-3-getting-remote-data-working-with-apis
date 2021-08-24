@@ -14,17 +14,17 @@ use. APIs allow us to add important data and functionality to the applications
 we build. Here's just a few examples of some of the cool things you can do by
 using APIs:
 
-* Create an app that allows users to sign up/sign in via
+- Create an app that allows users to sign up/sign in via
   Facebook/Google/Twitter/Github/etc.
-* Use the NYC Open Data API to get and map data––everything from Health
+- Use the NYC Open Data API to get and map data––everything from Health
   Department restaurant ratings to public park locations and hours to New York
   City Public Housing repair issues to noise complaints to public school
   construction, you name it!
-* Use the Yelp API to find and deliver popular local spots to your users.
-* Use the Weather Underground API to give your users up-to-date weather alerts.
-* Use the Ticket Master API to inform your users if their favorite musician has
+- Use the Yelp API to find and deliver popular local spots to your users.
+- Use the Weather Underground API to give your users up-to-date weather alerts.
+- Use the Ticket Master API to inform your users if their favorite musician has
   an upcoming show.
-* So much more!
+- So much more!
 
 This is just a small sample of what working with APIs allows us to do as
 developers. Throughout the course of your programming life, you'll likely be
@@ -82,7 +82,7 @@ why we spent so much time in previous lessons learning how to manipulate and
 operate on nested hashes.
 
 **Top Tip:** Once you find the right URL for retrieving your data, test it out
-directly in your browser *before* you try to request the data from inside your
+directly in your browser _before_ you try to request the data from inside your
 program. If pasting the URL into your browser brings you to the right data, you
 can move on. This cuts down on debugging time. This way, once you try to request
 the data from within your program, if it doesn't work, at least you'll know it's
@@ -122,7 +122,7 @@ We stored our API endpoint URL in a constant at the top of our class. Then, we
 have a `get_programs` method that uses the `NET::HTTP` library to send an HTTP
 request from our program. `NET::HTTP` is a Ruby library that allows your program
 or application to send HTTP requests. We require it at the top of our file with
-the `require` statement.  We also require the URI library which helps Ruby to
+the `require` statement. We also require the URI library which helps Ruby to
 handle URIs.
 
 Both [NET::HTTP][`net/http`] and [URI][`open-uri`] are classes built into Ruby.
@@ -153,7 +153,7 @@ def program_school
 # we use the JSON library to parse the API response into nicely formatted JSON
   programs = JSON.parse(self.get_programs)
   programs.collect do |program|
-    program["agency"]  
+    program["agency"]
   end
 end
 ```
@@ -176,9 +176,9 @@ puts programs.program_school.uniq
 Now, run the program with `ruby lib/nyc_api.rb` in your terminal. You should
 see something like this:
 
-```bash
+```txt
 Rockaway Artist Alliance, Inc.
-CAMBA  
+CAMBA
 Sports and Arts In Schools Foundation, Inc.
 New York Junior Tennis League
 Arthur Ashe Institute for Urban Health, Inc
@@ -221,7 +221,7 @@ a hash we can work with and extract data from.
 
 In our example, we were able to retrieve remote information from an API using
 the built-in Ruby classes `NET::HTTP` and `URI`. By putting this implementation
-inside a class, we can develop highly reuseable code that lets us access all
+inside a class, we can develop highly reusable code that lets us access all
 sorts of information remotely.
 
 The `GetPrograms` class used a hard-coded URL, stored as a class constant, and
@@ -247,8 +247,8 @@ JSON from any provided URL!
 
 ## Resources
 
-* [NET::HTTP][`net/http`]
-* [Open URI][`open-uri`]
+- [NET::HTTP][`net/http`]
+- [Open URI][`open-uri`]
 
 [`net/http`]: https://ruby-doc.org/stdlib-2.6.3/libdoc/net/http/rdoc/Net/HTTP.html
 [`open-uri`]: https://ruby-doc.org/stdlib-2.6.3/libdoc/open-uri/rdoc/OpenURI.html
